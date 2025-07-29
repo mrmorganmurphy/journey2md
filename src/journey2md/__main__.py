@@ -63,6 +63,8 @@ class Journey:
     """The tags associated with this journal entry."""
     type: str
     """The type of the text in this journal entry."""
+    linked_account_id: str
+    """Fix for an error on conversion as shown on issue #1"""
 
     @property
     def journal_time(self) -> datetime:
